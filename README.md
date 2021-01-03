@@ -19,4 +19,4 @@ FIFO Buffer
     * Resgister Map
     * FIFO simulation testing just to see if it was writing  and reading.
 
-5. - [x] Video implemetation of project on the FPGA board. The first 5 minutes it covers the needed material, and the rest of it, the other non-require functionalities that I added just to see and test what we learned so far. **[Click here for Midterm video ](https://www.youtube.com/watch?v=ElIRNtSaTC4)**
+5. - [x] Video implemetation of project on the FPGA board. The first 5 minutes it covers the needed material, and the rest of it, the other non-require functionalities that I added just to see and test what we learned so far. **[Click here for project video demo ](https://www.youtube.com/watch?v=ElIRNtSaTC4)**
