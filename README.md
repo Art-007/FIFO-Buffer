@@ -1,5 +1,5 @@
 FIFO Buffer
-## This project involved the use of a FIFO buffer, similar to the Uart FIFO. The FIFO can store up to 4 bytes. The input volatge from the Xadc (potentiometer) determines what bytes will be push, after a button is press. To read from the FIFO, we find the sum of all the stored bytes. Finally, we display the empty and full flags using two leds.  
+## This project involved the use of a FIFO buffer, similar to the Uart FIFO. The FIFO can store up to 4 bytes. The input volatge from the Xadc (potentiometer) determines what bytes will be push, after a button is press. To read from the FIFO, we find the sum of all the stored bytes. Finally, we display the empty and full flags using two leds. 
 ### *This project includes:*
 
 1. - [x] The Hardware, with all the modify code from vivado to permform this lab. 
@@ -12,11 +12,14 @@ FIFO Buffer
 
 3. - [x] Test Application.
     * The main_sampler_test.cpp, has all the C++ code to implement the write, read and the FIFO flags of empty and full
-      * It has the require testing such as to push to the FIFO using the potentiometer, read the sum, and display the empty and full. and do flashing when trying to push, but full and when trying to read, but empty.  
+      * It has the require testing such as to push to the FIFO using the potentiometer, read the sum, and display the empty and full. and do flashing when trying to push, but full  and when trying to read, but empty.  
       * It has also non-require fucntions such as using the tri color lights, a rest button just reading without having the sum, and pushing bytes using the switches [7:0], or pushing bytes in a combination of switches and the potentiometer.
 
 4. - [x] Vivado Plots.
     * Resgister Map
     * FIFO simulation testing just to see if it was writing  and reading.
-
-5. - [x] Video implemetation of project on the FPGA board. The first 5 minutes it covers the needed material, and the rest of it, the other non-require functionalities that I added just to see and test what we learned so far. **[Click here for project video demo ](https://www.youtube.com/watch?v=ElIRNtSaTC4)**
+    
+5. - [x] SOC additonal Sources.
+    * This contains all the needed sources files in the hardware and software to run the project, which also needs to have ip components such as a MicroBlaze MCS (cpu), XADC configuration / instantiation and clock management (under vivado clocking wizard) for four clocks of 100, 25, 40 and 65 MHZ.
+    
+6. - [x] Video implemetation of project on the FPGA board. The first 5 minutes it covers the needed material, and the rest of it, the other non-require functionalities that I added just to see and test what we learned so far. **[Click here for project video demo ](https://www.youtube.com/watch?v=ElIRNtSaTC4)**
